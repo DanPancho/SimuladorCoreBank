@@ -26,7 +26,7 @@ import jakarta.annotation.Nonnull;
  * NotificacionRespuestaBkToCstmrStmtRptStmtRptMge
  */
 
-public class NotificacionRespuestaBkToCstmrStmtRptStmtRptMge {
+public class NotificacionRespuestaDocumentBkToCstmrStmtRptStmtRptMge {
   public static final String SERIALIZED_NAME_TYPE = "Type";
  @JsonProperty(SERIALIZED_NAME_TYPE)
   @Nonnull
@@ -47,10 +47,10 @@ public class NotificacionRespuestaBkToCstmrStmtRptStmtRptMge {
   @Nonnull
   private String creDtTm;
 
-  public NotificacionRespuestaBkToCstmrStmtRptStmtRptMge() {
+  public NotificacionRespuestaDocumentBkToCstmrStmtRptStmtRptMge() {
   }
 
-  public NotificacionRespuestaBkToCstmrStmtRptStmtRptMge type(@Nonnull String type) {
+  public NotificacionRespuestaDocumentBkToCstmrStmtRptStmtRptMge type(@Nonnull String type) {
     this.type = type;
     return this;
   }
@@ -69,7 +69,7 @@ public class NotificacionRespuestaBkToCstmrStmtRptStmtRptMge {
   }
 
 
-  public NotificacionRespuestaBkToCstmrStmtRptStmtRptMge roR(@Nonnull String roR) {
+  public NotificacionRespuestaDocumentBkToCstmrStmtRptStmtRptMge roR(@Nonnull String roR) {
     this.roR = roR;
     return this;
   }
@@ -88,7 +88,7 @@ public class NotificacionRespuestaBkToCstmrStmtRptStmtRptMge {
   }
 
 
-  public NotificacionRespuestaBkToCstmrStmtRptStmtRptMge orgnlEndToEndId(@Nonnull String orgnlEndToEndId) {
+  public NotificacionRespuestaDocumentBkToCstmrStmtRptStmtRptMge orgnlEndToEndId(@Nonnull String orgnlEndToEndId) {
     this.orgnlEndToEndId = orgnlEndToEndId;
     return this;
   }
@@ -107,7 +107,7 @@ public class NotificacionRespuestaBkToCstmrStmtRptStmtRptMge {
   }
 
 
-  public NotificacionRespuestaBkToCstmrStmtRptStmtRptMge creDtTm(@Nonnull String creDtTm) {
+  public NotificacionRespuestaDocumentBkToCstmrStmtRptStmtRptMge creDtTm(@Nonnull String creDtTm) {
     this.creDtTm = creDtTm;
     return this;
   }

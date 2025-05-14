@@ -1,5 +1,6 @@
 package com.example.SimuladorCoreBank.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -10,6 +11,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.SimuladorCoreBank.model.notificacion.NotificacionRequest;
+import com.example.SimuladorCoreBank.model.notificacion.NotificacionRespuesta;
+import com.example.SimuladorCoreBank.service.IResponseNotificacionService;
 
 import jakarta.validation.Valid;
 
@@ -18,9 +21,12 @@ import jakarta.validation.Valid;
 @RequestMapping("/PagoDirectoSimulador")
 public class NotificacionController {
     
+    @Autowired
+    private IResponseNotificacionService responseNotificacionService;
+
     @PostMapping("/notificacion")
-    public String notificacion(@Valid @RequestBody NotificacionRequest request) {
-        return "HOLA";
+    public ResponseEntity<NotificacionRespuesta> notificacion(@Valid @RequestBody NotificacionRequest request) {
+        return ResponseEntity.ok(responseNotificacionService.makeResponse());   
     }
 
     @ExceptionHandler(MethodArgumentNotValidException.class)

@@ -10,6 +10,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.SimuladorCoreBank.model.credito.CreditoRequest;
+import com.example.SimuladorCoreBank.model.credito.CreditoResponse;
+import org.springframework.beans.factory.annotation.Autowired;
+import com.example.SimuladorCoreBank.service.IResponseCreditoService;
 
 import jakarta.validation.Valid;
 
@@ -17,9 +20,13 @@ import jakarta.validation.Valid;
 @RestController
 @RequestMapping("/PagoDirectoSimulador")
 public class PagoController {
+
+    @Autowired
+    private IResponseCreditoService responseCreditoService;
+
     @PostMapping("/credito")
-    public String credito(@Valid @RequestBody CreditoRequest request) {
-        return "HOLA";
+    public ResponseEntity<CreditoResponse> credito(@Valid @RequestBody CreditoRequest request) {
+        return ResponseEntity.ok(responseCreditoService.makResponse()); 
     }
 
     @ExceptionHandler(MethodArgumentNotValidException.class)

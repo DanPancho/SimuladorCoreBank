@@ -28,16 +28,16 @@ import jakarta.annotation.Nonnull;
  * NotificacionRespuestaBkToCstmrStmtRpt
  */
 
-public class NotificacionRespuestaBkToCstmrStmtRpt {
+public class NotificacionRespuestaDocumentBkToCstmrStmtRpt {
   public static final String SERIALIZED_NAME_STMT_RPT = "StmtRpt";
  @JsonProperty(SERIALIZED_NAME_STMT_RPT)
   @Nonnull
-  private NotificacionRespuestaBkToCstmrStmtRptStmtRpt stmtRpt;
+  private NotificacionRespuestaDocumentBkToCstmrStmtRptStmtRpt stmtRpt;
 
-  public NotificacionRespuestaBkToCstmrStmtRpt() {
+  public NotificacionRespuestaDocumentBkToCstmrStmtRpt() {
   }
 
-  public NotificacionRespuestaBkToCstmrStmtRpt stmtRpt(@Nonnull NotificacionRespuestaBkToCstmrStmtRptStmtRpt stmtRpt) {
+  public NotificacionRespuestaDocumentBkToCstmrStmtRpt stmtRpt(@Nonnull NotificacionRespuestaDocumentBkToCstmrStmtRptStmtRpt stmtRpt) {
     this.stmtRpt = stmtRpt;
     return this;
   }
@@ -47,11 +47,11 @@ public class NotificacionRespuestaBkToCstmrStmtRpt {
    * @return stmtRpt
    */
   @Nonnull
-  public NotificacionRespuestaBkToCstmrStmtRptStmtRpt getStmtRpt() {
+  public NotificacionRespuestaDocumentBkToCstmrStmtRptStmtRpt getStmtRpt() {
     return stmtRpt;
   }
 
-  public void setStmtRpt(@Nonnull NotificacionRespuestaBkToCstmrStmtRptStmtRpt stmtRpt) {
+  public void setStmtRpt(@Nonnull NotificacionRespuestaDocumentBkToCstmrStmtRptStmtRpt stmtRpt) {
     this.stmtRpt = stmtRpt;
   }
 }

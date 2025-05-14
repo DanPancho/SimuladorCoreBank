@@ -20,16 +20,16 @@ import jakarta.annotation.Nullable;
  * NotificacionRespuestaBkToCstmrStmtRptStmtRptStsRsnInfRsn
  */
 
-public class NotificacionRespuestaBkToCstmrStmtRptStmtRptStsRsnInfRsn {
+public class NotificacionRespuestaDocumentBkToCstmrStmtRptStmtRptStsRsnInfRsn {
   public static final String SERIALIZED_NAME_PRTRY = "Prtry";
   @JsonProperty(SERIALIZED_NAME_PRTRY)
   @Nullable
   private String prtry;
 
-  public NotificacionRespuestaBkToCstmrStmtRptStmtRptStsRsnInfRsn() {
+  public NotificacionRespuestaDocumentBkToCstmrStmtRptStmtRptStsRsnInfRsn() {
   }
 
-  public NotificacionRespuestaBkToCstmrStmtRptStmtRptStsRsnInfRsn prtry(@Nullable String prtry) {
+  public NotificacionRespuestaDocumentBkToCstmrStmtRptStmtRptStsRsnInfRsn prtry(@Nullable String prtry) {
     this.prtry = prtry;
     return this;
   }

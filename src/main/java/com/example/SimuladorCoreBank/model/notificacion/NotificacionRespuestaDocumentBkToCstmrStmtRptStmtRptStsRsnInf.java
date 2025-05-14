@@ -28,21 +28,21 @@ import jakarta.annotation.Nullable;
  * NotificacionRespuestaBkToCstmrStmtRptStmtRptStsRsnInf
  */
 
-public class NotificacionRespuestaBkToCstmrStmtRptStmtRptStsRsnInf {
+public class NotificacionRespuestaDocumentBkToCstmrStmtRptStmtRptStsRsnInf {
   public static final String SERIALIZED_NAME_RSN = "Rsn";
  @JsonProperty(SERIALIZED_NAME_RSN)
   @Nonnull
-  private NotificacionRespuestaBkToCstmrStmtRptStmtRptStsRsnInfRsn rsn;
+  private NotificacionRespuestaDocumentBkToCstmrStmtRptStmtRptStsRsnInfRsn rsn;
 
   public static final String SERIALIZED_NAME_ADDTL_INF = "AddtlInf";
  @JsonProperty(SERIALIZED_NAME_ADDTL_INF)
  @Nullable
   private String addtlInf;
 
-  public NotificacionRespuestaBkToCstmrStmtRptStmtRptStsRsnInf() {
+  public NotificacionRespuestaDocumentBkToCstmrStmtRptStmtRptStsRsnInf() {
   }
 
-  public NotificacionRespuestaBkToCstmrStmtRptStmtRptStsRsnInf rsn(@Nonnull NotificacionRespuestaBkToCstmrStmtRptStmtRptStsRsnInfRsn rsn) {
+  public NotificacionRespuestaDocumentBkToCstmrStmtRptStmtRptStsRsnInf rsn(@Nonnull NotificacionRespuestaDocumentBkToCstmrStmtRptStmtRptStsRsnInfRsn rsn) {
     this.rsn = rsn;
     return this;
   }
@@ -52,16 +52,16 @@ public class NotificacionRespuestaBkToCstmrStmtRptStmtRptStsRsnInf {
    * @return rsn
    */
   @Nonnull
-  public NotificacionRespuestaBkToCstmrStmtRptStmtRptStsRsnInfRsn getRsn() {
+  public NotificacionRespuestaDocumentBkToCstmrStmtRptStmtRptStsRsnInfRsn getRsn() {
     return rsn;
   }
 
-  public void setRsn(@Nonnull NotificacionRespuestaBkToCstmrStmtRptStmtRptStsRsnInfRsn rsn) {
+  public void setRsn(@Nonnull NotificacionRespuestaDocumentBkToCstmrStmtRptStmtRptStsRsnInfRsn rsn) {
     this.rsn = rsn;
   }
 
 
-  public NotificacionRespuestaBkToCstmrStmtRptStmtRptStsRsnInf addtlInf(@Nullable String addtlInf) {
+  public NotificacionRespuestaDocumentBkToCstmrStmtRptStmtRptStsRsnInf addtlInf(@Nullable String addtlInf) {
     this.addtlInf = addtlInf;
     return this;
   }
