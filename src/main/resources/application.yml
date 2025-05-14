@@ -1,0 +1,10 @@
+info:
+  version: 1.0.0
+  date: 2025-05-12
+  stage: development
+  autor: Daniel Arcos
+  email: darcos@banred.fin.ec
+  description: SIMULADOR CORE BANK
+ 
+server:
+    port: 8443
